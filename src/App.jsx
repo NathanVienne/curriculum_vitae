@@ -1,8 +1,9 @@
+import Navigation from "./components/nav"
 function App() {
 
   return (
     <>
-      <h1 className='text-primary'>Hello Wolrd !</h1>
+      <Navigation/>
     </>
   )
 }
