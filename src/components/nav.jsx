@@ -1,7 +1,7 @@
 function Navigation() {
     return (
         <header className="bg-primary text-white flex justify-between fixed top-0 left-0 right-0 z-50">
-            <div className="w-25 ms-4"><img src="../../public/LOGOS.png" alt="" /></div>
+            <div className="w-15 ms-4 my-3"><img src="../../public/CV_WEB.png" alt="" /></div>
             <nav className="my-auto">
                 <ul className="flex gap-6 me-6">
                     <li><a>Présentation</a></li>
