@@ -1,4 +1,6 @@
 import profileImage from "../assets/profile_image.jpg"
+import Icon from '@mdi/react';
+import { mdiGithub, mdiLinkedin, mdiAt } from '@mdi/js';
 
 function Hero() {
     return (
@@ -19,6 +21,23 @@ function Hero() {
                                 Spécialisé en React, Node.js et architectures cloud.
                             </p>
                         </div>
+                        <div className="space-y-8">
+                            <div className="flex space-x-5">
+                                <div><button className="btn btn-lg btn-primary border-neutral hover:btn-accent hover:text-primary">Télécharger CV</button></div>
+                                <div><button className="btn btn-lg btn-primary border-neutral hover:btn-secondary hover:text-primary">Me Contacter</button></div>
+                            </div>
+                            <div className="text-accent flex space-x-7">
+                                <div>
+                                    <Icon path={mdiGithub} size={1.2} />
+                                </div>
+                                <div>
+                                    <Icon path={mdiLinkedin} size={1.2} />
+                                </div>
+                                <div>
+                                    <Icon path={mdiAt} size={1.2} />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="flex-shrink-0">
                         <div className="relative">
@@ -26,15 +45,9 @@ function Hero() {
                             <img
                                 src={profileImage}
                                 alt="Nathan Vienne"
-                                className="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-3 border-neutral shadow-2xl"
+                                className="relative w-64 h-64 md:w-90 md:h-90 rounded-full object-cover border-3 border-neutral shadow-2xl"
                             />
                         </div>
-                    </div>
-                </div>
-                <div>
-                    <div className="flex space-x-5">
-                        <div><button className="btn btn-primary border-neutral hover:btn-accent hover:text-primary">Télécharger CV</button></div>
-                        <div><button className="btn btn-primary border-neutral hover:btn-secondary hover:text-primary">Me Contacter</button></div>
                     </div>
                 </div>
             </div>
