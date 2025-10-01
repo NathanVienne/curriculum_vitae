@@ -1,8 +1,11 @@
+import Navigation from "./components/nav/nav"
+import Hero from "./components/hero"
 function App() {
 
   return (
     <>
-      <h1 className='text-primary'>Hello Wolrd !</h1>
+      <Navigation/>
+      <Hero/>
     </>
   )
 }
