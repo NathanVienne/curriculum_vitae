@@ -1,4 +1,4 @@
-import Navigation from "./components/nav"
+import Navigation from "./components/nav/nav"
 import Hero from "./components/hero"
 function App() {
 

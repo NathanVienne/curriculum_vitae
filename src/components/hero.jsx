@@ -31,6 +31,12 @@ function Hero() {
                         </div>
                     </div>
                 </div>
+                <div>
+                    <div className="flex space-x-5">
+                        <div><button className="btn btn-primary border-neutral hover:btn-accent hover:text-primary">Télécharger CV</button></div>
+                        <div><button className="btn btn-primary border-neutral hover:btn-secondary hover:text-primary">Me Contacter</button></div>
+                    </div>
+                </div>
             </div>
         </section>
     )
