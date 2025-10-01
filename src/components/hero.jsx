@@ -1,6 +1,6 @@
 import profileImage from "../assets/profile_image.jpg"
 import Icon from '@mdi/react';
-import { mdiGithub, mdiLinkedin, mdiAt } from '@mdi/js';
+import { mdiGithub, mdiLinkedin, mdiAt, mdiTrayArrowDown, mdiEmailOutline } from '@mdi/js';
 
 function Hero() {
     return (
@@ -11,30 +11,36 @@ function Hero() {
                         <div className="space-y-2">
                             <p className="text-3xl font-medium">Bonjour, je suis</p>
                             <h1 className="text-6xl md:text-6xl font-bold">
-                                Nathan Vienne
+                                Nathan <span className="text-hollow">Vienne</span>
                             </h1>
-                            <h2 className="text-3xl md:text-3xl font-semibold text-foreground">
+                            <h2 className="text-3xl md:text-3xl text-accent font-semibold text-foreground">
                                 Développeur Full Stack
                             </h2>
-                            <p className="text-lg text-muted-foreground max-w-xl">
+                            <p className="text-lg text-muted-foreground text-gray-400 max-w-xl">
                                 Passionné par la création d'expériences web modernes et performantes.
                                 Spécialisé en React, Node.js et architectures cloud.
                             </p>
                         </div>
                         <div className="space-y-8">
                             <div className="flex space-x-5">
-                                <div><button className="btn btn-lg btn-primary border-neutral hover:btn-accent hover:text-primary">Télécharger CV</button></div>
-                                <div><button className="btn btn-lg btn-primary border-neutral hover:btn-secondary hover:text-primary">Me Contacter</button></div>
+                                <div className="btn btn-md btn-primary border-neutral hover:btn-accent hover:text-primary">
+                                    <Icon path={mdiTrayArrowDown} size={1} />
+                                    <button>Télécharger CV</button>
+                                </div>
+                                <div className="btn btn-md btn-primary border-neutral hover:btn-secondary hover:text-primary">
+                                    <Icon path={mdiEmailOutline} size={1} />
+                                    <button >Me Contacter</button>
+                                </div>
                             </div>
-                            <div className="text-accent flex space-x-7">
+                            <div className="flex space-x-7">
                                 <div>
-                                    <Icon path={mdiGithub} size={1.2} />
+                                    <Icon path={mdiGithub} size={1.6} className="p-2 bg-neutral rounded-full" />
                                 </div>
                                 <div>
-                                    <Icon path={mdiLinkedin} size={1.2} />
+                                    <Icon path={mdiLinkedin} size={1.6} className="p-2 bg-neutral rounded-full" />
                                 </div>
                                 <div>
-                                    <Icon path={mdiAt} size={1.2} />
+                                    <Icon path={mdiAt} size={1.6} className="p-2 bg-neutral rounded-full" />
                                 </div>
                             </div>
                         </div>
