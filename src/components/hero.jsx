@@ -3,7 +3,7 @@ import profileImage from "../assets/profile_image.jpg"
 function Hero() {
     return (
         <section id="hero" className="min-h-screen bg-primary flex items-center justify-center pt-16">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div className="container mx-auto py-20">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-12">
                     <div className="flex-1 space-y-6 text-center  text-white md:text-left">
                         <div className="space-y-2">
