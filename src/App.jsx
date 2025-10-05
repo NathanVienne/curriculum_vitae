@@ -4,11 +4,11 @@ import About from "./components/about"
 function App() {
 
   return (
-    <>
+    <main>
       <Navigation />
       <Hero />
       <About />
-    </>
+    </main>
   )
 }
 
