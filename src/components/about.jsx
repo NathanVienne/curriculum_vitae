@@ -29,7 +29,7 @@ export default function About() {
                 <h3>Centres d'Intérêt</h3>
                 <article className='mt-12 grid grid-cols-1 md:grid-cols-3 gap-15 max-w-4xl mx-auto'>
                     {interests.map((interest, index) => (
-                        <div className='card bg-neutral rounded-2xl shadow-2xl border border-neutral hover:border-secondary' key={index}>
+                        <div className='card bg-neutral rounded-2xl shadow-2xl border border-neutral hover:shadow-secondary' key={index}>
                             <figure className='pt-6'>
                                 <Icon 
                                     path={interest.iconPath} 
