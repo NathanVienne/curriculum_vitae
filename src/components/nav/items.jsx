@@ -1,6 +1,6 @@
 export default  function Links({label}) {
     return (
-        <li className="px-5 py-3 text-xs font-medium uppercase hover:outline-1 hover:outline-neutral hover:rounded-md hover:text-secondary">
+        <li className="super-li px-5 py-3 text-xs font-medium uppercase border border-primary hover:bg-neutral/50 transition-all duration-[475ms] hover:rounded-md hover:text-secondary hover:border-[#ffffff]/20">
             <a>
                 {label}
             </a>

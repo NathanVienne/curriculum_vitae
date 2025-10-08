@@ -41,7 +41,10 @@ const experiences = [
 export default function Experience() {
     return (
         <section className="bg-neutral py-15">
-            <h2 className="text-center pb-30 text-4xl text-white font-bold">Expériences & Formations</h2>
+            <div className="text-center pb-30 space-y-4">
+                <h2 className="text-4xl text-white font-bold">Expériences & Formations</h2>
+                <p className="text-accent text-xl">Cliquez sur les éléments pour en savoir plus</p>
+            </div>
             <ul className="timeline mx-auto w-fit">
                 < Items experiences={experiences} />
             </ul>
