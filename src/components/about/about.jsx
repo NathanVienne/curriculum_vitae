@@ -12,9 +12,9 @@ const interests = [
 ];
 
 const benevolats = [
-    { title: "Soutient Logistique", description: "Assure la préparation et le bon déroulement des collectes et événements : gestion du matériel, transport, sécurité et brief des équipes. Tient l'inventaire et veille à l'entretien des équipements.", icon: mdiAccountCog },
-    { title: "Commission Scientifique", description: "Participe à la caractérisation des déchets, à la structuration des données (tableaux, cartes, indicateurs) et à leur analyse. Rédige des notes/recommandations pour orienter les opérations et sensibiliser partenaires et publics.", icon: mdiMicroscope },
-    { title: "Développeur Web", description: "Développe et maintient le site (WordPress) : corrections, nouvelles features, performance, sécurité, accessibilité et SEO. Intègre des outils tiers (ex. HelloAsso, analytics) et documente les process pour l'équipe.", icon: mdiWordpress },
+    { title: "Soutient Logistique", period: "2021-2022", description: "Assure la préparation et le bon déroulement des collectes et événements : gestion du matériel, transport, sécurité et brief des équipes. Tient l'inventaire et veille à l'entretien des équipements.", icon: mdiAccountCog },
+    { title: "Commission Scientifique", period: "2022-2023", description: "Participe à la caractérisation des déchets, à la structuration des données (tableaux, cartes, indicateurs) et à leur analyse. Rédige des notes/recommandations pour orienter les opérations et sensibiliser partenaires et publics.", icon: mdiMicroscope },
+    { title: "Développeur Web", period: "2025", description: "Développe et maintient le site (WordPress) : corrections, nouvelles features, performance, sécurité, accessibilité et SEO. Intègre des outils tiers (ex. HelloAsso, analytics) et documente les process pour l'équipe.", icon: mdiWordpress },
 ]
 
 export default function About() {
@@ -42,9 +42,28 @@ export default function About() {
             </div>
             <div className='bg-primary py-10'>
                 <h3 className='text-center text-2xl font-semibold'>Bénévolat</h3>
-                <div className='flex justify-around mt-5'>
+                <div className='propreunion w-290 my-10 mx-auto flex rounded-xl'>
+                    <div className='flex-grow w-100 flex items-center justify-end'>
+                        <img src="src/assets/logo-propreunion-3.0.png"
+                            alt="Logo Association PropRéunion"
+                            className='w-20' />
+                    </div>
+                    <div className='mx-auto p-5 space-y-4'>
+                        <h4 className='font-semibold text-2xl text-accent'>PropRéunion</h4>
+                        <p className='text-justify'>PropRéunion est une association réunionnaise qui lutte concrètement contre les déchets et les pollutions du quotidien.
+                            Elle organise des collectes de terrain, coordonne les bénévoles et accompagne les partenaires locaux.
+                            Sa commission scientifique caractérise les déchets, produit des données utiles et alimente des recommandations pour prévenir à la source.
+                            L'association sensibilise écoles, habitants et décideurs à des pratiques sobres et à l'économie circulaire.
+                            Son combat : des milieux naturels, littoraux et quartiers propres, grâce à l'action citoyenne, la pédagogie et le plaidoyer.</p>
+                    </div>
+                </div>
+                <div className='flex justify-evenly mt-5'>
                     {benevolats.map((benevolat, index) => (
-                        < Test key={index} title={benevolat.title} description={benevolat.description} icon={benevolat.icon}/>
+                        < Test key={index}
+                            title={benevolat.title}
+                            period={benevolat.period}
+                            description={benevolat.description}
+                            icon={benevolat.icon} />
                     ))}
                 </div>
             </div>

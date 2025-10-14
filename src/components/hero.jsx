@@ -16,7 +16,7 @@ function Hero() {
                             <h2 className="text-3xl md:text-3xl text-accent font-semibold text-foreground">
                                 Développeur Full Stack
                             </h2>
-                            <p className="text-lg text-muted-foreground text-gray-400 max-w-xl">
+                            <p className="text-lg text-muted-foreground text-slate-400 max-w-xl">
                                 Passionné par la création d'expériences web modernes et performantes.
                                 Spécialisé en React, Node.js et architectures cloud.
                             </p>
@@ -34,13 +34,13 @@ function Hero() {
                             </div>
                             <div className="flex space-x-7">
                                 <div>
-                                    <Icon path={mdiGithub} size={1.6} className="p-2 bg-neutral rounded-full" />
+                                    <button type="button"><Icon path={mdiGithub} size={1.6} className="p-2 bg-neutral rounded-full" /></button>
                                 </div>
                                 <div>
-                                    <Icon path={mdiLinkedin} size={1.6} className="p-2 bg-neutral rounded-full" />
+                                    <button type="button"><Icon path={mdiLinkedin} size={1.6} className="p-2 bg-neutral rounded-full" /></button>
                                 </div>
                                 <div>
-                                    <Icon path={mdiAt} size={1.6} className="p-2 bg-neutral rounded-full" />
+                                    <button type="button"><Icon path={mdiAt} size={1.6} className="p-2 bg-neutral rounded-full" /></button>
                                 </div>
                             </div>
                         </div>

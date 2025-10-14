@@ -19,7 +19,7 @@ export default function Items({ experiences }) {
 
                 return (
                     <li key={index}>
-                        {!isFirst && <hr className="bg-white" />}
+                        {!isFirst && <hr className="bg-gray-400" />}
 
                         <div
                             className={`${index % 2 === 0 ? "timeline-end" : "timeline-start"
@@ -55,7 +55,7 @@ export default function Items({ experiences }) {
                             </svg>
                         </div>
 
-                        {!isLast && <hr className="bg-white" />}
+                        {!isLast && <hr className="bg-gray-400" />}
 
                         {isSelected && (
                             <Modal experience={experience} onClose={closeModal} />
