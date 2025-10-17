@@ -19,7 +19,7 @@ const benevolats = [
 
 export default function About() {
     return (
-        <section className="bg-neutral text-white py-10">
+        <section id="about" className="bg-neutral text-white py-10">
             <div className="text-center">
                 <h2 className="pt-10 pb-5 text-4xl font-bold">A Propos</h2>
                 <p className="text-xl pb-12 text-accent">En savoir plus sur moi & mes valeurs</p>

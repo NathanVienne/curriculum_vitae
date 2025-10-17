@@ -8,11 +8,11 @@ function Navigation() {
             </div>
             <nav>
                 <ul className="flex space-x-6 me-6">
-                    <Links label="Présentation"/>
-                    <Links label="Parcours"/>
+                    <Links label="Présentation" href="#hero"/>
+                    <Links label="Parcours" href="#experience"/>
                     <Links label="Compétences"/>
-                    <Links label="A Propos"/>
-                    <Links label="Contact"/>
+                    <Links label="A Propos" href="#about"/>
+                    <Links label="Contact" href="#contact" />
                 </ul>
             </nav>
         </header>
