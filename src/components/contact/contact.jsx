@@ -1,6 +1,7 @@
 import ContactForm from "./contact_form"
 import ContactCard from "./contact_card"
 export default function Contact() {
+    const mailAdress = "nathan.vienne@outlook.fr"
     return (
         <section id="contact" className="bg-neutral py-10">
             <h2 className="text-center text-4xl font-bold text-white">Contact</h2>
@@ -10,18 +11,21 @@ export default function Contact() {
                 <div className="flex flex-col justify-around">
                     < ContactCard />
                     <article class="container-contact">
-                        <a href="" class="icon icon-instagram">
+                        <a href={`mailto:${mailAdress}`} class="icon icon-mail">
                             <svg
+                                role="img"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                className="h-6 w-6 text-white"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
+                                className="h-6 w-6"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-                                ></path></svg
-                            ></a>
-                        <a href="" class="icon icon-dis">
+                                    d="M15.61 12c0 1.99-1.62 3.61-3.61 3.61-1.99 0-3.61-1.62-3.61-3.61 0-1.99 1.62-3.61 3.61-3.61 1.99 0 3.61 1.62 3.61 3.61M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12c2.424 0 4.761-.722 6.76-2.087l.034-.024-1.617-1.879-.027.017A9.494 9.494 0 0 1 12 21.54c-5.26 0-9.54-4.28-9.54-9.54 0-5.26 4.28-9.54 9.54-9.54 5.26 0 9.54 4.28 9.54 9.54a9.63 9.63 0 0 1-.225 2.05c-.301 1.239-1.169 1.618-1.82 1.568-.654-.053-1.42-.52-1.426-1.661V12A6.076 6.076 0 0 0 12 5.93 6.076 6.076 0 0 0 5.93 12 6.076 6.076 0 0 0 12 18.07a6.02 6.02 0 0 0 4.3-1.792 3.9 3.9 0 0 0 3.32 1.805c.874 0 1.74-.292 2.437-.821.719-.547 1.256-1.336 1.553-2.285.047-.154.135-.504.135-.507l.002-.013c.175-.76.253-1.52.253-2.457 0-6.617-5.383-12-12-12" />
+                            </svg>
+                        </a>
+                        <a href="https://discordapp.com/users/1310469383180652546"
+                            class="icon icon-dis"
+                            target="_blank"
+                            rel="noopener noreferrer">
                             <svg
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
@@ -33,7 +37,7 @@ export default function Contact() {
                                 ></path>
                             </svg>
                         </a>
-                        <a href="" class="icon icon-github">
+                        <a href="https://github.com/NathanVienne" class="icon icon-github">
                             <svg
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
@@ -45,7 +49,7 @@ export default function Contact() {
                                 ></path>
                             </svg>
                         </a>
-                        <a href="" class="icon icon-in">
+                        <a href="https://www.linkedin.com/in/nathan-vienne-7783a2215/" class="icon icon-in">
                             <svg
                                 viewBox="0 0 24 24"
                                 fill="currentColor"

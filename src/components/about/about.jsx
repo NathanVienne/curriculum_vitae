@@ -1,18 +1,17 @@
 import Card from './card';
-import { mdiCodeTags, mdiBasketball, mdiGolfTee, mdiHiking, mdiWatch, mdiCoffee, mdiAccountCog, mdiMicroscope, mdiWordpress } from '@mdi/js';
+import { mdiCodeTags, mdiBasketball, mdiGolfTee, mdiHiking, mdiWatch, mdiAccountCog, mdiMicroscope, mdiWordpress } from '@mdi/js';
 import Test from './card_test';
 
 const interests = [
-    { iconPath: mdiCodeTags, label: "Developpement Web" },
-    { iconPath: mdiBasketball, label: "Basket" },
-    { iconPath: mdiGolfTee, label: "Golf" },
-    { iconPath: mdiHiking, label: "Randonnées" },
-    { iconPath: mdiWatch, label: "Horlogerie" },
-    { iconPath: mdiCoffee, label: "Café" },
+    { iconPath: mdiCodeTags, label: "Developpement Web", description: "Initié au développement web et web mobile lors d’une formation professionnalisante, je continue à pratiquer et à progresser et à découvrir à travers des projets personnels, notamment en tant que développeur bénévole pour l'association Propréunion." },
+    { iconPath: mdiBasketball, label: "Basket", description: "11 années de pratique du basketball au Club Omnisport de la Montagne, forgeant mon esprit d'équipe, ma discipline et ma persévérance." },
+    { iconPath: mdiGolfTee, label: "Golf", description: "Le golf est un sport que je pratique depuis deux ans, qui m'apporte beaucoup sur le plan personnel, en renforçant ma concentration, ma résilience mentale et ma capacité à rester calme sous pression." },
+    { iconPath: mdiHiking, label: "Randonnées", description: "Afin de me ressourcer, découvrir l'île et me dépenser physiquement, je pratique la randonnée, seul ou avec des amis." },
+    { iconPath: mdiWatch, label: "Horlogerie", description: "Une passion de longue date, qui m'a permis d'intégrer l'entreprise Pala Créateur Joaillier en alternance, où j'ai contribué à la stratégie marketing et au développement des ventes en boutique." },
 ];
 
 const benevolats = [
-    { title: "Soutient Logistique", period: "2021-2022", description: "Assure la préparation et le bon déroulement des collectes et événements : gestion du matériel, transport, sécurité et brief des équipes. Tient l'inventaire et veille à l'entretien des équipements.", icon: mdiAccountCog },
+    { title: "Soutien Logistique", period: "2021-2022", description: "Assure la préparation et le bon déroulement des collectes et événements : gestion du matériel, transport, sécurité et brief des équipes. Tient l'inventaire et veille à l'entretien des équipements.", icon: mdiAccountCog },
     { title: "Commission Scientifique", period: "2022-2023", description: "Participe à la caractérisation des déchets, à la structuration des données (tableaux, cartes, indicateurs) et à leur analyse. Rédige des notes/recommandations pour orienter les opérations et sensibiliser partenaires et publics.", icon: mdiMicroscope },
     { title: "Développeur Web", period: "2025", description: "Développe et maintient le site (WordPress) : corrections, nouvelles features, performance, sécurité, accessibilité et SEO. Intègre des outils tiers (ex. HelloAsso, analytics) et documente les process pour l'équipe.", icon: mdiWordpress },
 ]
@@ -20,25 +19,38 @@ const benevolats = [
 export default function About() {
     return (
         <section id="about" className="bg-neutral text-white py-10">
-            <div className="text-center">
-                <h2 className="pt-10 pb-5 text-4xl font-bold">A Propos</h2>
-                <p className="text-xl pb-12 text-accent">En savoir plus sur moi & mes valeurs</p>
-            </div>
-            <div className="p-8 bg-primary mx-10 md:mx-40 rounded-tl-4xl rounded-br-4xl space-y-5 text-justify text-lg shdow-2xl">
-                <p>Passionné par le développement web depuis plus de 5 ans, je m'efforce de créer des solutions élégantes et performantes qui répondent aux besoins réels des utilisateurs.
-                    Mon approche combine expertise technique, créativité et souci du détail pour livrer des produits de qualité.</p>
-                <p>Je crois fermement en l'apprentissage continu et j'aime explorer de nouvelles technologies.
-                    La collaboration et le partage de connaissances sont au cœur de ma philosophie professionnelle.</p>
-                <p>En dehors du code, j'apprécie les moments passés à découvrir de nouveaux lieux, écouter de la musique et contribuer à des projets open source.
-                    Je suis toujours ouvert à de nouvelles opportunités et collaborations enrichissantes.</p>
+            <div>
+                <div className="text-center">
+                    <h2 className="pt-10 pb-5 text-4xl font-bold">A Propos</h2>
+                    <p className="text-xl pb-12 text-accent">En savoir plus sur moi & mes valeurs</p>
+                </div>
+                <div className="p-8 bg-primary mx-10 md:mx-40 rounded-tl-4xl rounded-br-4xl space-y-5 text-justify text-lg shdow-2xl">
+                    <p>Passionné par le développement web depuis plus de 5 ans, je m'efforce de créer des solutions élégantes et performantes qui répondent aux besoins réels des utilisateurs.
+                        Mon approche combine expertise technique, créativité et souci du détail pour livrer des produits de qualité.</p>
+                    <p>Je crois fermement en l'apprentissage continu et j'aime explorer de nouvelles technologies.
+                        La collaboration et le partage de connaissances sont au cœur de ma philosophie professionnelle.</p>
+                    <p>En dehors du code, j'apprécie les moments passés à découvrir de nouveaux lieux, écouter de la musique et contribuer à des projets open source.
+                        Je suis toujours ouvert à de nouvelles opportunités et collaborations enrichissantes.</p>
+                </div>
             </div>
             <div className="text-center text-2xl font-semibold my-10 px-10">
                 <h3>Centres d'Intérêt</h3>
-                <article className='mt-12 grid grid-cols-1 md:grid-cols-3 gap-10 max-w-4xl mx-auto'>
+
+                <div className="mt-10 flex flex-col items-center gap-8">
                     {interests.map((interest, index) => (
-                        <Card key={index} label={interest.label} iconPath={interest.iconPath} />
+                        <div
+                            key={index}
+                            className={`transition-all duration-300
+          ${index % 2 === 0 ? 'ml-4 md:-ml-96' : 'mr-4 md:-mr-96'}`}
+                        >
+                            <Card
+                                label={interest.label}
+                                iconPath={interest.iconPath}
+                                description={interest.description}
+                            />
+                        </div>
                     ))}
-                </article>
+                </div>
             </div>
             <div className='bg-primary py-10'>
                 <h3 className='text-center text-2xl font-semibold'>Bénévolat</h3>

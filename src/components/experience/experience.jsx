@@ -8,7 +8,7 @@ const experiences = [
         company: "Université Catholique de l'Ouest Réunion (UCO)",
         period: "2018 - 2022",
         description: "Formation axée sur la compréhension du comportement humain et des mécanismes cognitifs, avec un travail approfondi sur l'analyse critique d'articles scientifiques. Développement de solides compétences en synthèse, communication écrite et orale, ainsi qu'en esprit d'analyse, utiles dans tout environnement nécessitant rigueur et sens de l'observation.",
-        stages: `2019 - Stage à la DSIO du GHER
+        stages: `2019 - Stage au Groupe Hospitalier Est Réunion
         \n 2020 - Stage chez Célio Réunion
         \n 2021 - Stage en Neuropsychologie au service de Neurologie du CHU Nord`
     },
@@ -22,7 +22,7 @@ const experiences = [
         \n- Préparation des desserts selon les consignes du chef
         \n- Participation à la plonge et au nettoyage de la cuisine et des zones de stockage
         \n- Suivi des stocks et réalisation d'inventaires réguliers
-        \n- Respect rigoureux des normes d'hygiène (HACCP) et de sécurité alimentaire`,
+        \n- Respect rigoureux des normes d'hygiène et de sécurité alimentaire`,
     },
     {
         type: "education",

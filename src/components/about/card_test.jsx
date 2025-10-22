@@ -4,7 +4,7 @@ import Icon from "@mdi/react"
 export default function Test({ title, period, description, icon }) {
     return (
         <div className="carte">
-            <div className="icone">
+            <div className="pictogram">
                 <Icon path={icon} size={2} />
             </div>
             <div className=" card__content p-8 flex flex-col justify-center">
