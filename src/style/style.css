@@ -428,7 +428,8 @@ button svg {
 }
 
 .content {
-  padding: 90px 50px 0px 25px;
+  padding: 0 50px;
+  margin: auto 0;
   transform: translate3d(0, 0, 31px);
 }
 
@@ -444,7 +445,7 @@ button svg {
   text-align: justify;
   color: whitesmoke;
   font-size: 14px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .icone {
@@ -459,7 +460,7 @@ button svg {
   position: absolute;
   aspect-ratio: 1;
   border: 1px solid #fff2;
-  border-radius: 50%;
+  border-radius: 10px 10px 25px 10px;
   top: 0;
   left: 0;
   box-shadow: rgba(100, 100, 111, 0.2) 10px 10px 20px 0px;
@@ -467,36 +468,6 @@ button svg {
   transition: all 0.6s ease-in-out;
 }
 
-.icone .circle1 {
-  width: 160px;
-  transform: translate3d(0, 0, 25px);
-  top: 10px;
-  left: 10px;
-}
-
-.icone .circle2 {
-  width: 130px;
-  transform: translate3d(0, 0, 45px);
-  top: 12px;
-  left: 12px;
-  transition-delay: 0.3s;
-}
-
-.icone .circle3 {
-  width: 100px;
-  transform: translate3d(0, 0, 65px);
-  top: 15px;
-  left: 15px;
-  transition-delay: 0.6s;
-}
-
-.icone .circle4 {
-  width: 70px;
-  transform: translate3d(0, 0, 85px);
-  top: 20px;
-  left: 20px;
-  transition-delay: 0.9s;
-}
 
 .icone .circle5 {
   width: 40px;
@@ -505,7 +476,7 @@ button svg {
   left: 25px;
   display: grid;
   place-content: center;
-  transition-delay: 1.2s;
+  transition-delay: 0.6s;
 }
 
 .icone .circle5 .svg {
