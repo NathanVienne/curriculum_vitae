@@ -9,30 +9,30 @@ function Hero() {
 
     return (
         <section id="hero" className="min-h-screen bg-primary flex items-center justify-center pt-16">
-            <div className="container mx-auto py-20">
+            <div className="container mx-6 md:mx-auto py-20">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-                    <div className="flex-1 space-y-6 text-center  text-white md:text-left">
+                    <div className="flex-1 space-y-6 text-white text-left">
                         <div className="space-y-2">
                             <p className="text-3xl font-medium">Bonjour, je suis</p>
-                            <h1 className="text-6xl md:text-6xl font-bold">
+                            <h1 className="text-4xl md:text-6xl md:text-6xl font-bold">
                                 Nathan <span className="text-hollow">Vienne</span>
                             </h1>
-                            <h2 className="text-3xl md:text-3xl text-accent font-semibold text-foreground">
+                            <h2 className="text-2xl md:text-3xl text-accent font-semibold text-foreground">
                                 Développeur Full Stack
                             </h2>
-                            <p className="text-lg text-muted-foreground text-slate-400 max-w-xl">
+                            <p className="text-md md:text-lg text-muted-foreground text-slate-400 text-justify md:text-start max-w-xl">
                                 Passionné par la création d'expériences web modernes et performantes.
                                 Spécialisé en React, Node.js et architectures cloud.
                             </p>
                         </div>
                         <div className="space-y-8">
                             <div className="flex space-x-5">
-                                <div className="btn btn-md btn-primary border-neutral hover:btn-accent hover:text-primary hover:shadow-lg hover:shadow-info">
+                                <div className="btn btn-sm md:btn-md btn-primary border-neutral hover:btn-accent hover:text-primary hover:shadow-lg hover:shadow-info">
                                     <Icon path={mdiTrayArrowDown} size={1} />
                                     <a href="/public/CV-VIENNE_Nathan.pdf"
                                         download={CV}>Télécharger CV</a>
                                 </div>
-                                <div className="btn btn-md btn-primary border-neutral hover:btn-secondary hover:text-primary hover:shadow-lg hover:shadow-info">
+                                <div className="btn btn-sm md:btn-md btn-primary border-neutral hover:btn-secondary hover:text-primary hover:shadow-lg hover:shadow-info">
                                     <Icon path={mdiEmailOutline} size={1} />
                                     <a href={mail}>Me Contacter</a>
                                 </div>
