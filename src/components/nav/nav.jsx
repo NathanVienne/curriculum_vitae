@@ -24,7 +24,7 @@ function Navigation() {
 
         <div className="md:hidden flex justify-between items-center py-4">
           <div className="w-15">
-            <img src="../../public/CV_WEB.png" alt="Logo Vienne Nathan" />
+            <img src="/CV_WEB.png" alt="Logo Vienne Nathan" />
           </div>
           <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
             <Icon path={mdiMenu} size={1} className="text-white" />
