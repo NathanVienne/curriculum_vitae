@@ -1,7 +1,5 @@
 import { useState } from "react";
 import Modal from "./modal";
-import Icon from '@mdi/react';
-import { mdiBriefcase, mdiSchool } from '@mdi/js';
 
 
 export default function Items({ experiences }) {
@@ -19,22 +17,19 @@ export default function Items({ experiences }) {
 
                 return (
                     <li key={index}>
-                        {!isFirst && <hr className="bg-gray-400" />}
+                        {!isFirst && <hr className="bg-gray-400"/>}
 
                         <div
                             className={`${index % 2 === 0 ? "timeline-end" : "timeline-start"
-                                } py-2 px-3 text-secondary bg-secondary/30 rounded-xl font-semibold`}
+                                } py-2 px-3 text-secondary bg-secondary/30 rounded-xl font-semibold text-sm md:text-base`}
                         >
                             {experience.period}
                         </div>
                         <div className={`btn ${index % 2 === 0 ? "timeline-start" : "timeline-end"
                             } timeline-box indicator bg-primary border-primary hover:shadow-md hover:shadow-secondary`}>
-                            <span className="indicator-item text-accent p-2 rounded-full bg-primary/80">
-                                {experience.type === "work" ? <Icon path={mdiBriefcase} size={0.75} /> : <Icon path={mdiSchool} size={1} />}
-                            </span>
                             <button
                                 onClick={() => openModal(index)}
-                                className="text-white text-base"
+                                className="text-white text-sm md:text-base"
                             >
                                 {experience.title}
                             </button>
@@ -45,7 +40,7 @@ export default function Items({ experiences }) {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
-                                className="text-secondary h-6 w-6"
+                                className="text-secondary h-3 w-3 md:h-6 md:w-6"
                             >
                                 <path
                                     fillRule="evenodd"

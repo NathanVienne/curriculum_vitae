@@ -62,8 +62,7 @@
   opacity: 1;
   width: 70%;
   transition-duration: .3s;
-  padding-right: 10px;
-  margin-left: 10px;
+  margin-left: 45px;
 }
 
 /* button click effect*/
@@ -178,12 +177,14 @@
     linear-gradient(145deg, transparent 35%, #0000FF, #00FFFF) border-box;
 
 }
+
 #navigation_item:hover {
   background: linear-gradient(#0e0766, #0e0766) padding-box,
     linear-gradient(145deg, transparent 35%, #0000FF, #00FFFF) border-box;
 
 }
 
+/* Contact Card */
 .flip-card {
   background-color: transparent;
   width: 410px;
@@ -500,7 +501,7 @@ button svg {
   transform: translate3d(0, 0, 125px);
 }
 
-/* From Uiverse.io by vikas7754 */ 
+/* From Uiverse.io by vikas7754 */
 .tooltip-container {
   position: relative;
   cursor: pointer;
@@ -544,14 +545,17 @@ button svg {
   display: block;
   position: relative;
 }
+
 .layer {
   width: 55px;
   height: 55px;
   transition: transform 0.3s;
 }
+
 .icon-social:hover .layer {
   transform: rotate(-35deg) skew(20deg);
 }
+
 .layer span {
   position: absolute;
   top: 0;
@@ -572,6 +576,7 @@ button svg {
 .icon-social:hover.layer span {
   box-shadow: -1px 1px 3px #1da1f2;
 }
+
 .icon-social .text {
   position: absolute;
   left: 50%;
@@ -581,6 +586,7 @@ button svg {
   transform: translateX(-50%);
   transition: bottom 0.3s ease, opacity 0.3s ease;
 }
+
 .icon-social:hover .text {
   bottom: -35px;
   opacity: 1;
@@ -589,18 +595,22 @@ button svg {
 .icon-social:hover .layer span:nth-child(1) {
   opacity: 0.2;
 }
+
 .icon-social:hover .layer span:nth-child(2) {
   opacity: 0.4;
   transform: translate(5px, -5px);
 }
+
 .icon-social:hover .layer span:nth-child(3) {
   opacity: 0.6;
   transform: translate(10px, -10px);
 }
+
 .icon-social:hover .layer span:nth-child(4) {
   opacity: 0.8;
   transform: translate(15px, -15px);
 }
+
 .icon-social:hover .layer span:nth-child(5) {
   opacity: 1;
   transform: translate(20px, -20px);
@@ -613,10 +623,12 @@ button svg {
   fill: #ffffff;
   background: #1da1f2;
 }
+
 .user {
   display: flex;
   gap: 10px;
 }
+
 .img {
   width: 50px;
   height: 50px;
@@ -629,18 +641,58 @@ button svg {
   justify-content: center;
   background: #fff;
 }
+
 .pseudo {
   font-size: 17px;
   font-weight: 700;
   color: #1da1f2;
 }
+
 .details {
   display: flex;
   flex-direction: column;
   gap: 0;
   color: #fff;
 }
+
 .about {
   color: #ccc;
   padding-top: 5px;
+}
+
+/*! Responsive Values */
+@media screen and (max-width: 768px) {
+  .timeline-container {
+    gap: 2px;
+  }
+  .flip-card {
+    width: 340px;
+    height: 218px;
+    margin: 0 auto;
+  }
+
+  #form {
+    width: 340px;
+    margin: 0 auto;
+  }
+
+  .heading_8264 {
+    letter-spacing: .30em;
+    font-size: 0.75em;
+    left: 15.6em;
+  }
+
+  .logo {
+    top: 10.6em;
+    left: 16.8em;
+    width: 35px;
+    height: 35px;
+  }
+
+  .contactless {
+    top: 6.5em;
+    left: 17.5em;
+    width: 20px;
+    height: 20px;
+  }
 }

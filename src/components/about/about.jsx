@@ -52,16 +52,16 @@ export default function About() {
                     ))}
                 </div>
             </div>
-            <div className='bg-primary py-10'>
+            <div className='bg-primary py-10 px-5 md:px-0'>
                 <h3 className='text-center text-2xl font-semibold'>Bénévolat</h3>
-                <div className='propreunion w-290 my-10 mx-auto flex rounded-xl'>
-                    <div className='flex-grow w-100 flex items-center justify-end'>
+                <div className='propreunion w-auto md:w-290 my-10 mx-auto flex flex-col md:flex-row rounded-xl'>
+                    <div className='md:flex-grow md:w-100 md:flex items-center justify-end'>
                         <img src="src/assets/logo-propreunion-3.0.png"
                             alt="Logo Association PropRéunion"
-                            className='w-20' />
+                            className='w-30 md:w-20 mx-auto md:mx-0' />
                     </div>
                     <div className='mx-auto p-5 space-y-4'>
-                        <h4 className='font-semibold text-2xl text-accent'>PropRéunion</h4>
+                        <h4 className='font-semibold text-2xl text-accent text-center md:text-start'>PropRéunion</h4>
                         <p className='text-justify'>PropRéunion est une association réunionnaise qui lutte concrètement contre les déchets et les pollutions du quotidien.
                             Elle organise des collectes de terrain, coordonne les bénévoles et accompagne les partenaires locaux.
                             Sa commission scientifique caractérise les déchets, produit des données utiles et alimente des recommandations pour prévenir à la source.
@@ -69,7 +69,7 @@ export default function About() {
                             Son combat : des milieux naturels, littoraux et quartiers propres, grâce à l'action citoyenne, la pédagogie et le plaidoyer.</p>
                     </div>
                 </div>
-                <div className='flex justify-evenly mt-5'>
+                <div className='flex flex-col items-center space-y-5 md:flex-row md:justify-evenly mt-5'>
                     {benevolats.map((benevolat, index) => (
                         < Test key={index}
                             title={benevolat.title}

@@ -27,12 +27,12 @@ function Hero() {
                         </div>
                         <div className="space-y-8">
                             <div className="flex space-x-5">
-                                <div className="btn btn-sm md:btn-md btn-primary border-neutral hover:btn-accent hover:text-primary hover:shadow-lg hover:shadow-info">
+                                <div className="btn btn-sm md:btn-md btn-primary border-neutral hover:btn-accent hover:text-primary">
                                     <Icon path={mdiTrayArrowDown} size={1} />
                                     <a href="/public/CV-VIENNE_Nathan.pdf"
                                         download={CV}>Télécharger CV</a>
                                 </div>
-                                <div className="btn btn-sm md:btn-md btn-primary border-neutral hover:btn-secondary hover:text-primary hover:shadow-lg hover:shadow-info">
+                                <div className="btn btn-sm md:btn-md btn-primary border-neutral hover:btn-secondary hover:text-primary">
                                     <Icon path={mdiEmailOutline} size={1} />
                                     <a href={mail}>Me Contacter</a>
                                 </div>
