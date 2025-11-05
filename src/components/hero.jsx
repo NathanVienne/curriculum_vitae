@@ -34,7 +34,7 @@ function Hero() {
                                 </div>
                                 <div className="btn btn-sm md:btn-md btn-primary border-neutral hover:btn-secondary hover:text-primary">
                                     <Icon path={mdiEmailOutline} size={1} />
-                                    <a href={mail}>Me Contacter</a>
+                                    <a href={`mailto:${mail}`}>Me Contacter</a>
                                 </div>
                             </div>
                             <div className="flex space-x-7">
