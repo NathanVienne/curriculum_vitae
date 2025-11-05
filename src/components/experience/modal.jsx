@@ -20,9 +20,11 @@ export default function Modal({ experience, onClose }) {
             {experience.type === "work" ? <Icon path={mdiBriefcase} size={0.75} /> : <Icon path={mdiSchool} size={1} />}
           </span></div>
         </div> */}
-        <div className="absolute">
-          <div><p className="my-1 w-28 text-center text-secondary font-semibold bg-secondary/40 rounded-xl">{experience.period}</p></div>
-          <div className="bg-gray-300/30 rounded-full p-2 flex items-center relative top-0 right-0"><span className="indicator-item text-accent">
+        <div className="flex justify-between">
+          <div>
+            <p className="my-1 w-28 text-center text-secondary font-semibold bg-secondary/40 rounded-xl">{experience.period}</p>
+          </div>
+          <div className="bg-gray-300/30 rounded-full p-2 flex items-center"><span className="indicator-item text-accent">
             {experience.type === "work" ? <Icon path={mdiBriefcase} size={0.75} /> : <Icon path={mdiSchool} size={1} />}
           </span></div>
         </div>
