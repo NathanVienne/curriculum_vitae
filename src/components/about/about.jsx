@@ -24,13 +24,10 @@ export default function About() {
                     <h2 className="pt-10 pb-5 text-4xl font-bold">A Propos</h2>
                     <p className="text-xl pb-12 text-accent">En savoir plus sur moi & mes valeurs</p>
                 </div>
-                <div className="p-8 bg-primary mx-10 md:mx-40 rounded-tl-4xl rounded-br-4xl space-y-5 text-justify text-lg shdow-2xl">
-                    <p>Passionné par le développement web depuis plus de 5 ans, je m'efforce de créer des solutions élégantes et performantes qui répondent aux besoins réels des utilisateurs.
-                        Mon approche combine expertise technique, créativité et souci du détail pour livrer des produits de qualité.</p>
-                    <p>Je crois fermement en l'apprentissage continu et j'aime explorer de nouvelles technologies.
-                        La collaboration et le partage de connaissances sont au cœur de ma philosophie professionnelle.</p>
-                    <p>En dehors du code, j'apprécie les moments passés à découvrir de nouveaux lieux, écouter de la musique et contribuer à des projets open source.
-                        Je suis toujours ouvert à de nouvelles opportunités et collaborations enrichissantes.</p>
+                <div className="p-8 bg-primary mx-10 md:mx-40 rounded-tl-4xl rounded-br-4xl space-y-5 text-justify text-lg">
+                    <p>Curieux et animé par une réelle soif d'apprendre, je cherche avant tout à donner du sens à ce que j'entreprends. Mon parcours m'a permis d'explorer plusieurs domaines — de la psychologie au marketing digital, en passant par le développement web — tout en cultivant une sensibilité à l'expérience d'autrui et au travail bien fait.</p>
+                    <p>J'apprécie la collaboration, le partage d'idées et les environnements stimulants. En dehors du cadre professionnel, le sport occupe une place importante dans mon quotidien.</p>
+                    <p>Après onze années de basketball en club, je me consacre aujourd'hui au golf, une pratique qui m'aide à me dépasser, à me challenger et à mieux me connaître.</p>
                 </div>
             </div>
             <div className="text-center text-2xl font-semibold my-10 px-10">

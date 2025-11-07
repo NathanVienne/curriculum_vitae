@@ -17,7 +17,7 @@ const experiences = [
         title: "Commis de Cuisine",
         company: "Restaurant Le Bedroom",
         period: "2023",
-        description: `Préparation et mise en place du poste de travail avant service
+        description: `- Préparation et mise en place du poste de travail avant service
         \n- Réalisation de plats froids (entrées, salades, dressages) et participation à la préparation de plats chauds
         \n- Préparation des desserts selon les consignes du chef
         \n- Participation à la plonge et au nettoyage de la cuisine et des zones de stockage
@@ -50,7 +50,7 @@ const experiences = [
         status: "Non Diplomante",
         company: "AFPAR",
         period: "2024 - 2025",
-        description: "Apprentissage des fondamentaux du développement web (HTML, CSS, JavaScript, responsive design) et des bases de la programmation. Réalisation de projets concrets (intégration de maquettes, pages dynamiques). Formation non diplômante mais enrichissante, ayant renforcé ma culture web, ma logique technique et ma capacité à collaborer sur des projets digitaux.",
+        description: "Apprentissage des fondamentaux du développement web (Algorithmie, HTML, CSS, JavaScript, Frameworks, responsive design) et des bases de la programmation. Réalisation de projets concrets (conception, intégration de maquettes, pages dynamiques). Formation non diplômante mais enrichissante, ayant renforcé ma culture web, ma logique technique et ma capacité à collaborer sur des projets digitaux.",
     },
 ];
 

@@ -36,7 +36,7 @@ function Navigation() {
             <ul className="flex flex-col space-y-2 pb-4">
               <Links label="Présentation" href="#hero" />
               <Links label="Parcours" href="#experience" />
-              <Links label="Compétences" />
+              <Links label="Compétences" href="#skills"/>
               <Links label="A Propos" href="#about" />
               <Links label="Contact" href="#contact" />
             </ul>
