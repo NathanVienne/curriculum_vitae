@@ -5,7 +5,7 @@ export default function ContactCard() {
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="/CV_WEB_2.png" alt="Logo Vienne Nathan" className="w-25 md:w-30 h-25 md:h-30" id="contact_logo" />
+                    <img src="/curriculum_vitae/CV_WEB_2.png" alt="Logo Vienne Nathan" className="w-25 md:w-30 h-25 md:h-30" id="contact_logo" />
                 </div>
                 <div class="flip-card-back">
                     <p class="heading_8264">CONTACTCARD</p>

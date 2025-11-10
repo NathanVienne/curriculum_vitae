@@ -11,7 +11,7 @@ function Navigation() {
       <nav className="px-4 md:px-6">
         <div className="hidden md:flex justify-between items-center">
           <div className="w-15 my-3">
-            <img src="../../public/CV_WEB.png" alt="Logo Vienne Nathan" />
+            <img src="/curriculum_vitae/CV_WEB.png" alt="Logo Vienne Nathan" />
           </div>
           <ul className="flex space-x-6">
             <Links label="Présentation" href="#hero" />
