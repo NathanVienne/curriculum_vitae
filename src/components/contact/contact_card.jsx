@@ -35,15 +35,15 @@ export default function ContactCard() {
                     </svg>
                     <div class="contact_info">
                         <div class="name">
-                            Nathan Vienne
+                            Vienne Nathan
                         </div>
-                        <div>
-                            <p class="label">NUMERO</p>
-                            <p class="info">+262 693 94 65 61</p>
+                        <div className="mb-3">
+                            <p className="text-sm text-gray-400">NUMERO</p>
+                            <p className="info">+262 693 94 65 61</p>
                         </div>
-                        <div>
-                            <p class="label">EMAIL</p>
-                            <p class="info">nathan.vienne@outlook.fr</p>
+                        <div className="mb-3">
+                            <p className="text-sm text-gray-400">EMAIL</p>
+                            <p className="info">nathan.vienne@outlook.fr</p>
                         </div>
                     </div>
                 </div>

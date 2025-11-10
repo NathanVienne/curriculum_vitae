@@ -43,7 +43,7 @@ export default function ContactForm() {
                     </div>
 
                     <div className="flex justify-end">
-                        <button
+                        {/* <button
                             className="bg-primary text-white px-4 py-2 font-semibold rounded-md hover:shadow-sm hover:shadow-secondary w-full group"
                             type="submit"
                         >
@@ -58,6 +58,14 @@ export default function ContactForm() {
                                     </svg>
                                 </p>
                             </div>
+                        </button> */}
+                        <button
+                            className="text-white btn btn-disabled w-full"
+                            type="submit"
+                        >
+                            <p className="group-hover:-translate-y-7 duration-[1.125s] ease-[cubic-bezier(0.19,1,0.22,1)]">
+                                Envoyer
+                            </p>
                         </button>
                     </div>
                 </form>

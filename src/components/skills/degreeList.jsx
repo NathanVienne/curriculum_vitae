@@ -56,14 +56,13 @@ export default function DegreesList() {
     ];
 
     return (
-        <section className="flex flex-col space-y-4 md:flex-row justify-evenly mt-6 pb-6">
+        <section className="flex flex-col space-y-4 md:flex-row md:justify-center md:items-start md:gap-x-6 mt-6 pb-6">
             {degrees.map((degree, index) => (
                 <Degree
                     key={index}
                     label={degree.label}
                     year={degree.year}
                     time={degree.time}
-                    number={degree.values.length}
                     values={degree.values}
                 />
             ))}

@@ -57,7 +57,7 @@ const experiences = [
 export default function Experience() {
     return (
         <section id="experience" className="bg-neutral py-15">
-            <div className="text-center pb-30 space-y-4">
+            <div className="text-center pb-10 md:pb-30 space-y-4">
                 <h2 className="text-4xl text-white font-bold">Expériences & Formations</h2>
                 <p className="text-accent text-xl">Cliquez sur les éléments pour en savoir plus</p>
             </div>

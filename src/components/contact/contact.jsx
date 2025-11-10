@@ -6,7 +6,7 @@ export default function Contact() {
         <section id="contact" className="bg-neutral py-10">
             <h2 className="text-center text-4xl font-bold text-white">Contact</h2>
             <p className="text-center text-gray-400 text-lg my-8">Envie de discuter d'un projet ou simplement d'échanger ? N'hésitez pas à me contacter !</p>
-            <div className="flex flex-col md:flex-row justify-evenly">
+            <div className="flex flex-col gap-y-5 md:flex-row justify-evenly">
                 < ContactForm />
                 <div className="flex flex-col justify-around">
                     < ContactCard />

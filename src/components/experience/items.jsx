@@ -17,7 +17,7 @@ export default function Items({ experiences }) {
 
                 return (
                     <li key={index}>
-                        {!isFirst && <hr className="bg-gray-400"/>}
+                        {!isFirst && <hr className="bg-gray-400" />}
 
                         <div
                             className={`${index % 2 === 0 ? "timeline-end" : "timeline-start"
@@ -25,15 +25,16 @@ export default function Items({ experiences }) {
                         >
                             {experience.period}
                         </div>
-                        <div className={`btn ${index % 2 === 0 ? "timeline-start" : "timeline-end"
-                            } timeline-box indicator bg-primary border-primary hover:shadow-md hover:shadow-secondary`}>
-                            <button
-                                onClick={() => openModal(index)}
-                                className="text-white text-sm md:text-base"
+                        <button
+                            onClick={() => openModal(index)}
+                            className={`btn ${index % 2 === 0 ? "timeline-start" : "timeline-end"
+                                } timeline-box indicator bg-primary border-primary hover:shadow-md hover:shadow-secondary`}>
+                            <span
+                                className="text-white text-xs md:text-base"
                             >
                                 {experience.title}
-                            </button>
-                        </div>
+                            </span>
+                        </button>
 
                         <div className="timeline-middle py-2">
                             <svg

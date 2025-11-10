@@ -13,7 +13,7 @@ export default function Skills() {
 
     return (
         <section id="skills" className="bg-primary">
-            <h2 className="text-center text-white pt-10 pb-5 text-4xl font-bold">Compétences</h2>
+            <h2 className="text-center text-white pt-10 pb-5 text-4xl font-bold">Compétences & Savoir-Faire</h2>
             <div className='flex flex-col items-center space-y-4 md:flex-row md:justify-around py-8'>
                 {skills.map((skill, index) => (
                     <SoftSkills key={index} label={skill.label} icon={skill.iconPath} />

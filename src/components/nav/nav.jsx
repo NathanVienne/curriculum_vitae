@@ -16,7 +16,7 @@ function Navigation() {
           <ul className="flex space-x-6">
             <Links label="Présentation" href="#hero" />
             <Links label="Parcours" href="#experience" />
-            <Links label="Compétences" />
+            <Links label="Compétences" href="#skills"/>
             <Links label="A Propos" href="#about" />
             <Links label="Contact" href="#contact" />
           </ul>
