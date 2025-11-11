@@ -61,9 +61,9 @@ export default function Experience() {
                 <h2 className="text-4xl text-white font-bold">Expériences & Formations</h2>
                 <p className="text-accent text-xl">Cliquez sur les éléments pour en savoir plus</p>
             </div>
-            <ul className="timeline timeline-vertical md:timeline-horizontal mx-auto w-fit">
+            <div id="experiences" className="flex flex-col md:flex-row md:justify-evenly gap-y-4 md:h-32 mx-auto">
                 < Items experiences={experiences} />
-            </ul>
+            </div>
         </section>
     )
 }

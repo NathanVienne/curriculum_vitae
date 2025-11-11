@@ -14,13 +14,13 @@ function Hero() {
                     <div className="flex-1 space-y-6 text-white text-left">
                         <div className="space-y-2">
                             <p className="text-3xl font-medium">Bonjour, je suis</p>
-                            <h1 className="text-4xl md:text-6xl md:text-6xl font-bold">
+                            <h1 className="text-4xl text-accent md:text-6xl font-bold">
                                 Nathan <span className="text-hollow">Vienne</span>
                             </h1>
                             {/* <h2 className="text-2xl md:text-3xl text-accent font-semibold text-foreground">
                                 Développeur Full Stack
                             </h2> */}
-                            <p className="text-md md:text-lg text-muted-foreground text-slate-400 text-justify md:text-start max-w-xl">
+                            <p className="text-md md:text-lg text-muted-foreground text-slate-400 text-justify max-w-xl">
                                 Curieux, sociable et passionné par le sport, j'aime évoluer dans des environnements dynamiques où le travail d'équipe et la relation humaine sont essentiels. 
                                 J'accorde une grande importance au service, à l'accueil et à la satisfaction des clients. 
                                 Organisé et motivé, je m'adapte facilement et donne toujours le meilleur de moi-même.
