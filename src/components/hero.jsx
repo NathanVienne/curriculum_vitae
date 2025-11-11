@@ -30,7 +30,7 @@ function Hero() {
                                 <div className="btn btn-sm md:btn-md btn-primary border-neutral hover:btn-accent hover:text-primary">
                                     <Icon path={mdiTrayArrowDown} size={1} />
                                     <a href="/public/CV-VIENNE_Nathan.pdf"
-                                        download={CV}>Télécharger CV</a>
+                                        download={`${import.meta.env.BASE_URL}/${CV}`}>Télécharger CV</a>
                                 </div>
                                 <div className="btn btn-sm md:btn-md btn-primary border-neutral hover:btn-secondary hover:text-primary">
                                     <Icon path={mdiEmailOutline} size={1} />
