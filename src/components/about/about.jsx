@@ -53,7 +53,7 @@ export default function About() {
                 <h3 className='text-center text-2xl font-semibold'>Bénévolat</h3>
                 <div className='propreunion w-auto md:w-290 my-10 mx-auto flex flex-col md:flex-row rounded-xl'>
                     <div className='md:flex-grow md:w-100 md:flex items-center justify-end'>
-                        <img src="../assets/logo-propreunion-3.0.png"
+                        <img src="./assets/logo-propreunion-3.0.png"
                             alt="Logo Association PropRéunion"
                             className='w-30 md:w-20 mx-auto md:mx-0' />
                     </div>
