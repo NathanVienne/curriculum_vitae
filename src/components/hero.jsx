@@ -17,12 +17,13 @@ function Hero() {
                             <h1 className="text-4xl md:text-6xl md:text-6xl font-bold">
                                 Nathan <span className="text-hollow">Vienne</span>
                             </h1>
-                            <h2 className="text-2xl md:text-3xl text-accent font-semibold text-foreground">
+                            {/* <h2 className="text-2xl md:text-3xl text-accent font-semibold text-foreground">
                                 Développeur Full Stack
-                            </h2>
+                            </h2> */}
                             <p className="text-md md:text-lg text-muted-foreground text-slate-400 text-justify md:text-start max-w-xl">
-                                Passionné par la création d'expériences web modernes et performantes.
-                                Spécialisé en React, Node.js et architectures cloud.
+                                Curieux, sociable et passionné par le sport, j'aime évoluer dans des environnements dynamiques où le travail d'équipe et la relation humaine sont essentiels. 
+                                J'accorde une grande importance au service, à l'accueil et à la satisfaction des clients. 
+                                Organisé et motivé, je m'adapte facilement et donne toujours le meilleur de moi-même.
                             </p>
                         </div>
                         <div className="space-y-8">
