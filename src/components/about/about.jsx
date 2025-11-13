@@ -59,10 +59,10 @@ export default function About() {
                             className='w-30 md:w-20 mx-auto md:mx-0' />
                     </div>
                     <div className='mx-auto p-5 space-y-4'>
-                        <div className='flex space-x-4'>
+                        <div className='flex space-x-4 items-center'>
                             <h4 className='font-semibold text-2xl text-accent text-center md:text-start'>PropRéunion</h4>
-                            <a href='https://propreunion.com/' className='text-accent'>
-                                <Icon path={mdiWeb} size={1} />
+                            <a href='https://propreunion.com/' className='hover:text-accent'>
+                                <Icon path={mdiWeb} size={1.1}/>
                             </a>
                         </div>
                         <p className='text-justify'>PropRéunion est une association réunionnaise qui lutte concrètement contre les déchets et les pollutions du quotidien.
