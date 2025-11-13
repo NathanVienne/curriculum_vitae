@@ -30,8 +30,8 @@ function Hero() {
                             <div className="flex space-x-5">
                                 <div className="btn btn-sm md:btn-md btn-primary border-neutral hover:btn-accent hover:text-primary">
                                     <Icon path={mdiTrayArrowDown} size={1} />
-                                    <a href={`${import.meta.env.BASE_URL}/${CV}`}
-                                        download={`${import.meta.env.BASE_URL}/${CV}`}>Télécharger CV</a>
+                                    <a href={`${import.meta.env.BASE_URL}/CV-VIENNE_Nathan.pdf`}
+                                        download={`${import.meta.env.BASE_URL}/CV-VIENNE_Nathan.pdf`}>Télécharger CV</a>
                                 </div>
                                 <div className="btn btn-sm md:btn-md btn-primary border-neutral hover:btn-secondary hover:text-primary">
                                     <Icon path={mdiEmailOutline} size={1} />
