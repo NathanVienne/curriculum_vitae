@@ -1,5 +1,5 @@
 import Card from './card';
-import { mdiCodeTags, mdiBasketball, mdiGolfTee, mdiHiking, mdiWatch, mdiAccountCog, mdiMicroscope, mdiWordpress } from '@mdi/js';
+import { mdiCodeTags, mdiBasketball, mdiGolfTee, mdiHiking, mdiWatch, mdiAccountCog, mdiMicroscope, mdiWordpress, mdiWeb } from '@mdi/js';
 import Test from './card_test';
 
 const interests = [
@@ -58,7 +58,12 @@ export default function About() {
                             className='w-30 md:w-20 mx-auto md:mx-0' />
                     </div>
                     <div className='mx-auto p-5 space-y-4'>
-                        <h4 className='font-semibold text-2xl text-accent text-center md:text-start'>PropRéunion</h4>
+                        <div className='flex space-x-4'>
+                            <h4 className='font-semibold text-2xl text-accent text-center md:text-start'>PropRéunion</h4>
+                            <a href='https://propreunion.com/' className='text-accent'>
+                                <Icon path={mdiWeb} size={1} />
+                            </a>
+                        </div>
                         <p className='text-justify'>PropRéunion est une association réunionnaise qui lutte concrètement contre les déchets et les pollutions du quotidien.
                             Elle organise des collectes de terrain, coordonne les bénévoles et accompagne les partenaires locaux.
                             Sa commission scientifique caractérise les déchets, produit des données utiles et alimente des recommandations pour prévenir à la source.
