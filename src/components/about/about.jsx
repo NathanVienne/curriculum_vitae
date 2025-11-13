@@ -1,7 +1,7 @@
 import Card from './card';
+import Icon from '@mdi/react';
 import { mdiCodeTags, mdiBasketball, mdiGolfTee, mdiHiking, mdiWatch, mdiAccountCog, mdiMicroscope, mdiWordpress, mdiWeb } from '@mdi/js';
 import Test from './card_test';
-import Icon from '@mdi/react';
 
 const interests = [
     { iconPath: mdiCodeTags, label: "Developpement Web", description: "Initié au développement web et web mobile lors d’une formation professionnalisante, je continue à pratiquer et à progresser et à découvrir à travers des projets personnels, notamment en tant que développeur bénévole pour l'association Propréunion." },
